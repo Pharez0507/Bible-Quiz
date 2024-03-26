@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="welcome-message">
+            <h1>Welcome to the Bible Quiz</h1>
+            <p>Test your knowledge of the Holy Scriptures and see how well you fare!</p>
+        </div>
+        <article id="about">
+            <div class="about-container">
+                <h2>About Us</h2>
+               <div class="description">
+                    <p>Pharez is the founder of this website. He released this project on March 26, 2024, to the whole world, giving Christians the power to test their biblical knowleedge.</p>
+                </div>
+            </div>
+        </article>
+        <br><br>
+        <article id="playnow">
+            <h2 class="playnow-h2">Enter Your Name to start the Bible Quiz</h2>
+            <br>
+            <div class="name">
+                <input type="text" placeholder="Please enter your name" id="name">
+                <button type="button" id="name-btn">Start Quiz</button>
+            </div>
+            <br>
+            <div class="quiz" id="quiz" style="display: none;">
+                <h2 id="quiz-question"></h2>
+                <br>
+                <div class="choice" id="answer-buttons">
+                    <button class="left-btn btn" id="answer-btn-left"></button>
+                    <button class="right-btn btn" id="answer-btn-right"></button>
+                    <button class="left-btn btn" id="answer-btn-left2"></button>
+                    <button class="right-btn btn" id="answer-btn-right2"></button>
+                    <button id="skip-btn">Skip</button>
+                </div>
+            </div>
+            <div id="result" style="display: none;">
+                <h2>Your Score:</h2>
+                <p id="score"></p>
+                <button id="retry-btn">Retry</button>
+                <div class="loading" style="display: none;">
+                    <div class="loader"></div>
+                    <p>Loading...</p>
+                </div>
+            </div>
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
